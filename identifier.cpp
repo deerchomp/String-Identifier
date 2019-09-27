@@ -1,3 +1,8 @@
+// Brendon Linthurst
+// CPSC 323
+// Assignment 2
+// 9/27/2019
+
 #include <iostream>
 #include <string>
 #include <cctype>
