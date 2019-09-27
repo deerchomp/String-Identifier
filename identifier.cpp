@@ -6,18 +6,21 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include <stdio.h>
 using namespace std;
 
 int main() {
     string input = "";
-    char quit;
+    char quit; //sentinel
 
     do {
         bool isValid = true;
+
+        //various flags used for control
         bool hasUnderscore = false;
         bool hasDigit = false;
         bool hasAlpha = false;
+
+
         cout << "ENTER A STRING: ";
         getline(cin, input);
 
@@ -38,6 +41,7 @@ int main() {
             }
         }
 
+        //final determination if input is an identifier by using flags
         if (hasDigit && hasUnderscore && hasAlpha) {
             cout << input << " is an identifier" << endl;
         }
